@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Courgette&family=Raleway:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#07030d, #f7f7f7);
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 355px 139px;
+    display: flex;
+    justify-content: left;
+    z-index: 10000;
+}
+
+header h1 {
+    color: #f7f7f7;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-size: 72px;
+    font-weight: 50;
+    text-shadow: 2px 2px 4px #e3e3e3;
+}
+
+.feature {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 400px;
+    padding: 180px 428px;
+    display: flex;
+    justify-content: left;
+    z-index: 10000;
+}
+
+.feature h4 {
+    z-index: 10000;
+    color: #e3e3e3;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-size: 2.5em;
+}
+
+.quote {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 600px;
+    padding: 170px;
+    padding-left: 262px;
+    display: flex;
+    justify-content: left;
+    z-index: 10000;
+}
+
+.quote h2 {
+    color: #e3e3e3;
+    font-size: 42px;
+    font-weight: 50;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #000000, transparent);
+    z-index: 1000;
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+
+.about {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 100px;
+    background: #000000;
+    justify-content: center;
+    align-items: center;
+}
+
+.about h2 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    color: #e3e3e3;
+    text-transform: uppercase;
+}
+
+.about p {
+    font-size: 26px;
+    color: #e3e3e3;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.about ul {
+    font-size: 26px;
+    color: #e3e3e3;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.cards {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    padding: 20px;
+    margin: 15px;
+}
+
+.flip-card img {
+    width: 300px;
+    height: 400px;
+    
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #e3e3e3;
+    color: #f7f7f7;
+}
+
+.flip-card-back {
+    background-color: transparent;
+    color: #f7f7f7;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back > p {
+    font-size: 17px;
+}
+
+.buttons a {
+    text-decoration: none;
+    background-color: transparent;
+    color: #e3e3e3;
+}
+
+.buttons {
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: transparent;
+    color: #e3e3e3;
+    transition-duration: 0.4s;
+}
+
+.buttons:hover {
+    background-color: #e3e3e3c6;
+}
+
+.buttons :hover {
+    color: black;
+    font-weight: 600;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 21px;
+
+}

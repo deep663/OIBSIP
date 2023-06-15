@@ -1,0 +1,52 @@
+*, *::before, *::after {
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+  }
+
+.calculator {
+    width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgb(2, 68, 143);
+}
+
+.calculator input {
+    font-size: 2rem;
+    width: 378px;
+    margin-bottom: 20px;
+    padding: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background: #000000ec;
+    color: white;
+}
+
+.calculator .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    
+}
+
+.calculator button {
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+}
+
+.calculator .buttons :hover{
+    cursor: pointer;
+    opacity: 90%;
+}
+
+#AC {
+    color: red;
+}
+
+.optr {
+    color: blue;
+}
